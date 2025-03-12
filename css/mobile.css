@@ -8,6 +8,11 @@
     .footer-column {
         padding: 15px 0;
     }
+    /* catalog */
+   .section1_p{
+    display: none;
+   }
+
 }
 /* catalog.html */
 @media (max-width: 320px) {
