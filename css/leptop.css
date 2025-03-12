@@ -1,0 +1,51 @@
+/* 1439-769  */
+
+@media (max-width: 1180px) {
+
+    /* header  */
+    .header {
+        padding-inline: 32px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 98.4px;
+        left: -100%;
+        background-color: #C46A2B;
+        width: 200px;
+        height: 144px;
+        padding: 16px;
+        transition: .5s linear;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .header_ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+}
+/* catalog.css */
+@media (max-width: 1180px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card:nth-child(n+10) {
+        display: none;
+    }
+     /* contact page */
+
+     .contact_section1 {
+        padding-inline: 32px;
+    }
+
+}
+
+
+   

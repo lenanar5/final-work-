@@ -1,0 +1,56 @@
+/* 768px-481px  */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-section {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+/* catalog.htmll */
+@media (max-width: 744px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card:nth-child(n+5) {
+        display: none;
+    }
+     /* contact page */
+
+     .contact_section1 {
+        padding: 64px 24px;
+        height: 807px;
+    }
+
+    .contact_section_div {
+        flex-direction: column;
+        padding: 16px;
+        row-gap: 48px;
+
+    }
+
+    .form_section,
+    .social_links_section {
+        width: 100%;
+    }
+
+    .form_header {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+
+
+    .social_links_section {
+        row-gap: 24px;
+    }
+
+    .links_div {
+        column-gap: 42px;
+    }
+
+    .map {
+        height: 200px;
+    }
+
+}
