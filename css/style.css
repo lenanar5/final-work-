@@ -108,6 +108,7 @@
 }
 
 .text-overlay p {
+    font-family: var(--family);
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
@@ -490,16 +491,17 @@
 .scroll_button {
     display: flex;
     justify-content: center;
-
     column-gap: 16px;
-
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: .5s;
+    transition: background-color 0.3s, transform 0.2s;
     padding: 8px;
 }
-
+.scroll_button:hover {
+    background-color: #ee31cb;
+    transform: scale(1.05);
+}
 .scroll_button_text {
     font-family: var(--family);
     font-weight: 400;
@@ -513,23 +515,10 @@
     color: #D9D9D9;
 }
 
-.right:hover {
-    box-shadow: 20px 0 5px rgba(5, 188, 202, 0.7),
-        40px 0 5px rgba(5, 188, 202, 0.3);
-    transform: translateX(10px);
-
-}
-
 .left {
     background-color: #C46A2B;
     width: 121px;
     height: 40px;
-}
-
-.left:hover {
-    box-shadow: -20px 0 5px rgba(196, 106, 43, 0.7),
-        -40px 0 5px rgba(196, 106, 43, 0.3);
-    transform: translateX(-10px)
 }
 
 .pages {
@@ -566,16 +555,6 @@
     border-radius: 10px;
     column-gap: 40px;
     padding: 32px;
-    transform: scale(0);
-    animation: scale .7s linear .2s 1 forwards;
-}
-
-@keyframes scale {
-
-
-    to {
-        transform: scale(1);
-    }
 }
 
 .form_section {
@@ -623,8 +602,6 @@
     box-shadow: 0 0 15px var(--border_color);
     border-color: var(--border_color);
 }
-
-
 
 ::placeholder {
     font-family: var(--family);
